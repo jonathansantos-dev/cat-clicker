@@ -4,25 +4,43 @@
 	<meta charset="UTF-8">
 	<title>Cat Clicker</title>
 	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
-		<div class="row flex">
+		<div class="row">
 			<div class="col-xs-12 title">
 				<h1>Cat Clicker</h1>
 			</div>
-			<div class="col-xs-6 cat-image-1">
-				<!-- ELEMENTS CREATED WITH JS FILES -->
-				<div class="res-cat1">
-					<p id="qtd-clicks"><strong>Clicks:&nbsp;</strong></p>
-					<p id="clicks-cat1">0</p>
-				</div>
+		</div>
+		<div class="row flex">
+			<div class="col-xs-12">
+				<ul id="list-cats">
+					<!-- ELEMENTS CRATED WITH JS FILES-->
+				</ul>
 			</div>
-			<div class="col-xs-6 cat-image-2">
-				<!-- ELEMENTS CREATED WITH JS FILES -->
-				<div class="res-cat2">
-					<p id="qtd-clicks"><strong>Clicks:&nbsp;</strong></p>
-					<p id="clicks-cat2">0</p>
+		</div>
+		<div class="row">
+			<div id="cat-selected" class="col-xs-12">
+				<h2 id="cat-name" class="name"></h2>
+				<img id="cat-img" src="" alt="Cute Cat">
+				<div class="Counter">
+					<p>Clicks: </p>
+					<p id="qtd-clicks"></p>
+					<button id="admin-btn">Admin</button>
+				</div>
+				<div class="admin-controls">
+					<label for="name-control">Name: </label>
+					<input id="name-control" type="text">
+
+					<label for="url-control">Url: </label>
+					<input id="url-control" type="text">
+
+					<label for="counter-control">Counter: </label>
+					<input id="counter-control" type="text">
+
+					<button id="cancel-btn">Cancelar</button>
+					<button id="save-btn">Salvar</button>
 				</div>
 			</div>
 		</div>
@@ -32,3 +50,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/js/script.min.js"></script>
 </html>
+<!--
+
+<div class="col-xs-6 cat-image-1">
+
+	<div class="res-cat1">
+		<p id="qtd-clicks"><strong>Clicks:&nbsp;</strong></p>
+		<p id="clicks-cat1">0</p>
+	</div>
+</div>
+<div class="col-xs-6 cat-image-2">
+
+	<div class="res-cat2">
+		<p id="qtd-clicks"><strong>Clicks:&nbsp;</strong></p>
+		<p id="clicks-cat2">0</p>
+	</div>
+</div>
+
+
+
+-->
