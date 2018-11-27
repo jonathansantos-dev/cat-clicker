@@ -2,5 +2,5 @@
 
 A project developed in the classes of the Front-end Nanodegree of Udacity.
 
-By Jonathan Santos
+By Jonathan C. Santos
 
